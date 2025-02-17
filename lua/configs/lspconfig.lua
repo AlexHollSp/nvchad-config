@@ -20,12 +20,12 @@ lspconfig.harper_ls.setup {
   settings = {
     ["harper-ls"] = {
       linters = {
-        spell_check = true,
+        spell_check = false,
         spelled_numbers = false,
         an_a = true,
         sentence_capitalization = true,
         unclosed_quotes = true,
-        wrong_quotes = false,
+        wrong_quotes = true,
         long_sentences = true,
         repeated_words = true,
         spaces = true,
