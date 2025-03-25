@@ -49,7 +49,22 @@ return {
       desc = "Quickfix List (Trouble)",
     },
   },
-}
+},
+    {'jose-elias-alvarez/null-ls.nvim'},
+    {'folke/lsp-colors.nvim'}, -- Plugin para adicionar cores aos diagnósticos LSP
+    {'nvim-lua/popup.nvim'}, -- Plugin para exibir popups
+    {'kyazdani42/nvim-web-devicons'}, -- Plugin para adicionar ícones de arquivos
+    
+
+  {'williamboman/mason-lspconfig.nvim', -- Plugin para integrar o Mason com o nvim-lspconfig
+    config = function()
+      require("mason-lspconfig").setup {
+        ensure_installed = { "ts_ls" }, -- Instala o servidor de linguagem ts_ls
+      }
+    end
+  },
+
+
   -- {
   -- 	"nvim-treesitter/nvim-treesitter",
   -- 	opts = {
